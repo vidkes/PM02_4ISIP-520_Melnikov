@@ -1,0 +1,31 @@
+﻿<Window x:Class="PM02_4ISIP_520_Melnikov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PM02_4ISIP_520_Melnikov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="260"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="390"></ColumnDefinition>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Требуемое количество" Foreground="#37474F" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <TextBox Name="DemandText" Grid.Column="1" Foreground="#37474F" Margin="10"/>
+        <Label Grid.Row="1" Foreground="#37474F" Content="Количество на заводах" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="15"/>
+        <TextBox Name="SupplyText" Grid.Column="2" Foreground="#37474F" Margin="10" Grid.Row="1"/>
+        <Label Margin="0,10,0,45" Foreground="#37474F" Content="Стоимость перевозки" FontSize="15" VerticalContentAlignment="Top" HorizontalContentAlignment="Right" Grid.Row="2"/>
+        <TextBox Name="CostsText" AcceptsReturn="True" Grid.Column="1" Foreground="#37474F" Margin="10" Grid.Row="2"/>
+        <Label Foreground="#37474F" Content="Опорный план" FontSize="15" HorizontalContentAlignment="Right" Margin="0,10,0,205" Grid.Row="3"/>
+        <TextBlock Name="OutputBlock" Grid.Column="1" Foreground="#37474F" Margin="10" Grid.Row="3"/>
+        <Button Content="Сброс данных" Foreground="#37474F" HorizontalAlignment="Left" Margin="120,188,0,0" Grid.Row="3" VerticalAlignment="Top" Width="146" Height="29" Click="Button_Click_1"/>
+        <Button Content="Составить опорный план" Foreground="#37474F" HorizontalAlignment="Left" Margin="120,222,0,0" Grid.Row="3" VerticalAlignment="Top" Width="146" Height="29" Click="Button_Click"/>
+    </Grid>
+</Window>
